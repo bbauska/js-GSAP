@@ -88,9 +88,7 @@ docs</a> for more features and detailed examples.
 
 To create a tween, it can be as simple as:
 
-<pre>
-gsap.to(&quot;.box&quot;, { x: 100 });
-</pre>
+<pre>gsap.to(&quot;.box&quot;, { x: 100 });</pre>
 
 This tells GSAP to create a tween, **targeting** DOM elements matching
 the CSS selector &quot;.box&quot;. The elements will be animated **from** their
@@ -119,16 +117,12 @@ seconds.
 This can be easily changed using the duration <a href="https://gsap.com/resources/get-started#special-properties">
 special property</a>:
 
-<pre>
-gsap.to(&quot;.box&quot;, { x: 100, duration: 2 });
-</pre>
+<pre>gsap.to(&quot;.box&quot;, { x: 100, duration: 2 });</pre>
 
 Also, our animation will run immediately, as soon as the page&apos;s
 JavaScript is loaded. We can change that using the delay property:
 
-<pre>
-gsap.to(&quot;.box&quot;, { x: 100, duration: 2, delay: 1 });
-</pre>
+<pre>gsap.to(&quot;.box&quot;, { x: 100, duration: 2, delay: 1 });</pre>
 
 We can also change the &quot;feel&quot; of the animation by changing
 the ease function. By default, the tween will use
@@ -137,9 +131,7 @@ even offers a <a href="https://gsap.com/docs/v3/Eases/">tool</a> to better
 visualize them. To make the animation a little more fun, we can for
 instance use the &quot;elastic&quot; ease function:
 
-<pre>
-gsap.to(&quot;.box&quot;, { x: 100, duration: 2, delay: 1, ease: &quot;elastic&quot; });
-</pre>
+<pre>gsap.to(&quot;.box&quot;, { x: 100, duration: 2, delay: 1, ease: &quot;elastic&quot; });</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~ 02.  (xx) ~~~~~~~~~~~~~~~~~~~-->
 <p align="left">
@@ -162,9 +154,7 @@ state **to** the specified state, it will do the opposite.
 The following example will animate elements with CSS
 class &quot;.box&quot; from x: -100 to x: 0.
 
-<pre>
-gsap.from(&quot;.box&quot;, { x: -100 });
-</pre>
+<pre>gsap.from(&quot;.box&quot;, { x: -100 });</pre>
 
 This can be very useful to create animations that run on page load, or
 to make new elements appear.
@@ -346,11 +336,12 @@ svgRectangles.forEach((rect, i) =&gt; {
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 07.  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="left"
+<p align="left">
 <img src="./images/image007.png"
   title="Codepen.io: "
   alt="Codepen.io: ."
   style="width:6.5in;" />
+</p>
 <!-- ./images/image007.png){width="6.5in" height="2.717361111111111in"} -->
 
 https://codepen.io/slax57/pen/OJGLGmb
