@@ -1,7 +1,11 @@
---
-js-GSAP: JavaScript GreenSock Animation Platform
-Last Modified: 12/29/2024 11:07pm
-Create Date: 12/29/2024 10:00pm
+---
+title: "js-GSAP - JavaScript GreenSock Animation Platform"
+author: "bbauska"
+date created: "12/29/2024 10+pm"
+date last editted: "12/29/2024 10+pm"
+output: 
+  markdown:
+    with some style
 ---
 
 Landing pages often have moving pictures to make them more interesting.
