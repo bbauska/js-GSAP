@@ -1,6 +1,3 @@
-# js-GSAP
-JavaScript GSAP (GreenSock Animated Platform) for animation of elements in a Webpage.
-
 Landing pages often have moving pictures to make them more interesting.
 But making these movements with just HTML and CSS can be hard, so we use
 special JavaScript libraries for animation.
@@ -95,8 +92,15 @@ state { x: 100 }.
 transform shorthand</a> provided by GSAP, equivalent to transform: translateX(100px).
 
 https://codepen.io/slax57/pen/vYMBPGV
-
-![](./images/image001.png){width="6.5in" height="2.7263888888888888in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 01.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<p align="left">
+<img src="./images/image001.png"
+  title=""
+  alt="."
+  style="width:6.5in;" />
+</p>
+<!-- (./images/image001.png){width="6.5in" height="2.7263888888888888in"} -->
 
 https://codepen.io/slax57/pen/vYMBPGV
 
@@ -127,8 +131,15 @@ instance use the &quot;elastic&quot; ease function:
 <pre>
 gsap.to(&quot;.box&quot;, { x: 100, duration: 2, delay: 1, ease: &quot;elastic&quot; });
 </pre>
-
-![](./images/image002.png){width="6.5in" height="2.717361111111111in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 02.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<p align="left">
+<img src="./images/image002.png"
+  title=""
+  alt="."
+  style="width:6.5in;" />
+</p>
+<!-- (./images/image002.png){width="6.5in" height="2.717361111111111in"} -->
 
 https://codepen.io/slax57/pen/KKYPEgV
 
@@ -158,8 +169,15 @@ gsap.from(&quot;.box&quot;, { x: -100, autoAlpha: 0 });
 
 **Tip:** autoAlpha is another <a href="https://gsap.com/resources/get-started/#transform-shorthand">
 transform shorthand</a>), for both opacity and visibility.
-
-![](./images/image003.png){width="6.5in" height="2.717361111111111in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 03.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<p align="left">
+<img src="./images/image003.png"
+  title=""
+  alt="."
+  style="width:6.5in;" />
+</p>
+<!-- (./images/image003.png){width="6.5in" height="2.717361111111111in"} -->
 
 https://codepen.io/slax57/pen/qBwWvqo
 
@@ -192,14 +210,20 @@ from which we will be animating later.
 
 <pre>
 gsap.set(&quot;.box&quot;, { transformOrigin: &quot;center&quot; });
-gsap.to(&quot;.box&quot;, { rotation: 360, repeat: -1, duration: 5, ease:
-&quot;linear&quot; });
+gsap.to(&quot;.box&quot;, { rotation: 360, repeat: -1, duration: 5, ease: &quot;linear&quot; });
 </pre>
 
 **Tip:** [repeat: -1](https://marmelab.com/blog/2024/03/27/infinitely) makes an animation
 repeat infinitely.
-
-![](./images/image004.png){width="6.5in" height="2.717361111111111in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 04.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<p align="left">
+<img src="./images/image004.png"
+  title=""
+  alt="."
+  style="width:6.5in;" />
+</p>
+<!-- (./images/image004.png){width="6.5in" height="2.717361111111111in"} -->
 
 https://codepen.io/slax57/pen/ExJYMWw
 
@@ -214,11 +238,18 @@ the animations in sequence.
 <pre>
 const tl = gsap.timeline();
 tl.from(&quot;.logo&quot;, { duration: 2.5, opacity: 0, scale: 0.3 }); // Instead of gsap.from()
-<br>
+
 tl.from(&quot;.circle&quot;, { duration: 1, opacity: 0, y: 150 }); // Instead of gsap.from()
 </pre>
-
-![](./images/image005.png){width="6.5in" height="2.7083333333333335in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 05.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<p align="left">
+<img src="./images/image005.png"
+  title=""
+  alt="."
+  style="width:6.5in;" />
+</p>
+<!-- (./images/image005.png){width="6.5in" height="2.7083333333333335in"} -->
 
 https://codepen.io/slax57/pen/BaEBbYa
 
@@ -240,8 +271,15 @@ tl.from(&quot;.circle&quot;, { duration: 1, opacity: 0, y: 150 }, &quot;+=2&quot
 </pre>
 
 Starts this animation 2 seconds past the end of the timeline (creates a gap)
-
-![](./images/image006.png){width="6.5in" height="2.6993055555555556in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 06.  (xx) ~~~~~~~~~~~~~~~~~~~-->
+<p align="left">
+<img src="./images/image006.png"
+  title=""
+  alt="."
+  style="width:6.5in;" />
+</p>
+<!-- ./images/image006.png){width="6.5in" height="2.6993055555555556in"} -->
 
 https://codepen.io/slax57/pen/YzMKMGz
 
@@ -300,8 +338,15 @@ svgRectangles.forEach((rect, i) =&gt; {
   });
 });
 </pre>
-
-![](./images/image007.png){width="6.5in" height="2.717361111111111in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 07.  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="left"
+<img src="./images/image007.png"
+  loading="lazy"
+  title=""
+  alt="."
+  style="width:6.5in height:2.717in;" />
+<!-- ./images/image007.png){width="6.5in" height="2.717361111111111in"} -->
 
 https://codepen.io/slax57/pen/OJGLGmb
 
