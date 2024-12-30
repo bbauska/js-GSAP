@@ -1,3 +1,9 @@
+--
+js-GSAP: JavaScript GreenSock Animation Platform
+Last Modified: 12/29/2024 11:07pm
+Create Date: 12/29/2024 10:00pm
+---
+
 Landing pages often have moving pictures to make them more interesting.
 But making these movements with just HTML and CSS can be hard, so we use
 special JavaScript libraries for animation.
@@ -9,13 +15,13 @@ encountered some tricky parts.
 
 So, we decided to share what we learned in a series of articles:
 
-1.  GSAP Basics: Dive Into Web Animations *(this post)*
-
-2.  <a href="https://marmelab.com/blog/2024/04/11/trigger-animations-on-scroll-with-gsap-scrolltrigger.html">
-  Trigger Animations On Scroll With GSAP<a/>
-
-3.  <a href="https://marmelab.com/blog/2024/05/30/gsap-in-practice-avoid-the-pitfalls.html">
-  GSAP in practice: some pitfalls to avoid</a>
+<ol>
+  <li>GSAP Basics: Dive Into Web Animations <b>(this post)</b>.</li>
+  <li><a href="https://marmelab.com/blog/2024/04/11/trigger-animations-on-scroll-with-gsap-scrolltrigger.html">
+    Trigger Animations On Scroll With GSAP<a/>.</li>
+  <li><a href="https://marmelab.com/blog/2024/05/30/gsap-in-practice-avoid-the-pitfalls.html">
+    GSAP in practice: some pitfalls to avoid</a>.</li>
+</ol>
 
 Let&apos;s get started with a quick overview of GSAP.
 
@@ -65,8 +71,7 @@ PLAYHEAD
 
 <pre>
 &vert;&dash;&dash;&dash;&dash;&dash;&dash;&dash;&dash;&dash;&dash;&dash;&dash;&dash;-timeline&dash;&dash;&dash;&dash;-&vert;&dash;&dash;&dash;&dash;&dash;&dash;&dash;&dash;&dash;&dash;-&vert;
-&vert;&dash;-tween1&dash;-&vert; &vert;
-&vert;&dash;&dash;&dash;&dash;-tween2&dash;&dash;&dash;&dash;-&vert;&dash;&dash;&dash;&dash;&dash;&dash;&dash;&dash;&dash;&dash;-&vert;
+&vert;&dash;-tween1&dash;-&vert; &vert;&dash;&dash;&dash;&dash;-tween2&dash;&dash;&dash;&dash;-&vert;&dash;&dash;&dash;&dash;&dash;&dash;&dash;&dash;&dash;&dash;-&vert;
 </pre>
 
 **Syntax**
@@ -286,20 +291,16 @@ https://codepen.io/slax57/pen/YzMKMGz
 This extra parameter is called the <a href="https://gsap.com/docs/v3/GSAP/Timeline#positioning-animations-in-a-timeline">position parameter</a>,
 and accepts many syntaxes to accommodate for all use cases:
 
--   3 insert at exactly 3 seconds from the start of the timeline
-
--   &quot;&lt;&quot; insert at the *start* of the previous animation
-
--   &quot;&gt;&quot; insert at the *end* of the previous animation
-
--   &quot;&lt;+=3&quot; 3 seconds past the start of the previous animation
-
--   &quot;&gt;-0.5&quot; 0.5 seconds before the end of the previous animation
-
--   &quot;-=25%&quot; overlap with the end of the timeline by 25% of the
-    inserting animation&apos;s total duration
-
--   and so on&hellip;
+<ul>
+  <li>3 insert at exactly 3 seconds from the start of the timeline</li>
+  <li>&quot;&lt;&quot; insert at the *start* of the previous animation</li>
+  <li>&quot;&gt;&quot; insert at the *end* of the previous animation</li>
+  <li>&quot;&lt;+=3&quot; 3 seconds past the start of the previous animation</li>
+  <li>&quot;&gt;-0.5&quot; 0.5 seconds before the end of the previous animation</li>
+  <li>&quot;-=25%&quot; overlap with the end of the timeline by 25% of the
+    inserting animation&apos;s total duration</li>
+  <li>and so on&hellip;</li>
+</ul>
 
 This makes it so much easier to decompose a complex animation into small
 steps and experiment with the timing of each step independently.
@@ -313,11 +314,12 @@ selector.
 
 It can be useful to:
 
--   Know how many elements there are (for calculations)
-
--   Attach an animation to the specific element in the array rather than
+<ul>
+  <li>Know how many elements there are (for calculations)</li>
+  <li>Attach an animation to the specific element in the array rather than
     to all elements (useful to select the current element as a trigger
-    for instance)
+    for instance)</li>
+</ul>
 
 In the following example, we use this feature to set a different initial
 rotation angle for each rectangle, and also a different duration,
@@ -342,10 +344,9 @@ svgRectangles.forEach((rect, i) =&gt; {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 07.  (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="left"
 <img src="./images/image007.png"
-  loading="lazy"
-  title=""
-  alt="."
-  style="width:6.5in height:2.717in;" />
+  title="Codepen.io: "
+  alt="Codepen.io: ."
+  style="width:6.5in;" />
 <!-- ./images/image007.png){width="6.5in" height="2.717361111111111in"} -->
 
 https://codepen.io/slax57/pen/OJGLGmb
