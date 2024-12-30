@@ -29,7 +29,7 @@ So, we decided to share what we learned in a series of articles:
 
 Let&apos;s get started with a quick overview of GSAP.
 
-**What is GSAP?**
+<h3>What is GSAP?</h3>
 
 <a href="https://gsap.com/">GSAP</a> (for GreenSock Animation Platform) is a
 JavaScript library that allows to animate elements in a webpage. It
@@ -46,12 +46,12 @@ of what this library can do, it&apos;s amazing!
 
 Now that you are, hopefully, hyped up just like I am, let&apos;s dive in!
 
-**Main Concepts**
+<h3>Main Concepts</h3>
 
 In this section, I&apos;ll cover two of the most basic concepts introduced
 by the library.
 
-**Tween**
+<h3>Tween</h3>
 
 Probably the first concept you will come across when reading the GSAP
 docs are **tweens**. The term tween comes from the word *between*, as a
@@ -60,7 +60,7 @@ and a **to** state. It also holds the **target** (the object to
 animate), and any other properties describing the animation, like its
 duration, or the easing function used to calculate mid-animation values.
 
-**Timeline**
+<h3>Timeline</h3>
 
 Basically, the **timeline** answers the following question: how can I
 trigger my animations in sequence, or relative to one another, without
@@ -71,20 +71,20 @@ timeline can then be manipulated (play, pause, seek a specific frame,
 &hellip;) as a whole without having to manage the playhead for all tweens
 manually.
 
-PLAYHEAD
+<h4>PLAYHEAD</h4>
 
 <pre>
 &vert;&dash;&dash;&dash;&dash;&dash;&dash;&dash;&dash;&dash;&dash;&dash;&dash;&dash;-timeline&dash;&dash;&dash;&dash;-&vert;&dash;&dash;&dash;&dash;&dash;&dash;&dash;&dash;&dash;&dash;-&vert;
-&vert;&dash;-tween1&dash;-&vert; &vert;&dash;&dash;&dash;&dash;-tween2&dash;&dash;&dash;&dash;-&vert;&dash;&dash;&dash;&dash;&dash;&dash;&dash;&dash;&dash;&dash;-&vert;
+&vert;&dash;-tween1&dash;-&vert;&vert;&dash;&dash;&dash;&dash;-tween2&dash;&dash;&dash;&dash;-&vert;&dash;&dash;&dash;&dash;&dash;&dash;&dash;&dash;&dash;&dash;-&vert;
 </pre>
 
-**Syntax**
+<h4>Syntax</h4>
 
 In this section, I will go through some of the code syntaxes that I
 found most useful. But be sure to check out the <a href="https://gsap.com/resources/get-started">GSAP
 docs</a> for more features and detailed examples.
 
-**gsap.to()**
+<h4>gsap.to()</h4>
 
 To create a tween, it can be as simple as:
 
@@ -144,7 +144,7 @@ instance use the &quot;elastic&quot; ease function:
 
 https://codepen.io/slax57/pen/KKYPEgV
 
-**gsap.from()**
+<h4>gsap.from()</h4>
 
 The gsap.to() function has a twin (not to be confused with tween! 😁️)
 function: gsap.from(). It works exactly the same way. The only
@@ -159,8 +159,7 @@ class &quot;.box&quot; from x: -100 to x: 0.
 This can be very useful to create animations that run on page load, or
 to make new elements appear.
 
-Here is another example with some opacity change, to make the element
-fade in:
+Here is another example with some opacity change, to make the element fade in:
 
 <pre>
 gsap.from(&quot;.box&quot;, { x: -100, autoAlpha: 0 });
@@ -180,7 +179,7 @@ transform shorthand</a>), for both opacity and visibility.
 
 https://codepen.io/slax57/pen/qBwWvqo
 
-**gsap.fromTo()**
+<h4>gsap.fromTo()</h4>
 
 Now that we&apos;ve covered the gsap.to() and gsap.from() functions, you can
 easily guess what the gsap.fromTo() function does. It can be useful in
@@ -199,7 +198,7 @@ if (shouldAnimate) {
 }
 </pre>
 
-**gsap.set()**
+<h4>gsap.set()</h4>
 
 gsap.set() is the last function returning a *tween* that I&apos;d like to
 cover. In essence, it&apos;s equivalent to calling gsap.to() with a duration
@@ -212,7 +211,7 @@ gsap.set(&quot;.box&quot;, { transformOrigin: &quot;center&quot; });
 gsap.to(&quot;.box&quot;, { rotation: 360, repeat: -1, duration: 5, ease: &quot;linear&quot; });
 </pre>
 
-**Tip:** [repeat: -1](https://marmelab.com/blog/2024/03/27/infinitely) makes an animation
+**Tip:** <a href="https://marmelab.com/blog/2024/03/27/infinitely">repeat: -1</a> makes an animation
 repeat infinitely.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~ 04.  (xx) ~~~~~~~~~~~~~~~~~~~-->
@@ -226,7 +225,7 @@ repeat infinitely.
 
 https://codepen.io/slax57/pen/ExJYMWw
 
-**gsap.timeline()**
+<h4>gsap.timeline()</h4>
 
 As the name suggests, gsap.timeline() allows to create a **timeline**.
 
@@ -301,10 +300,9 @@ steps and experiment with the timing of each step independently.
 
 **Tip:** Timelines can also be nested.
 
-**gsap.utils.toArray()**
+<h4>gsap.utils.toArray()</h4>
 
-This utility method allows to get an array of elements matching a
-selector.
+This utility method allows to get an array of elements matching a selector.
 
 It can be useful to:
 
@@ -346,7 +344,7 @@ svgRectangles.forEach((rect, i) =&gt; {
 
 https://codepen.io/slax57/pen/OJGLGmb
 
-**Conclusion**
+<h3>Conclusion</h3>
 
 This covers some of the basics of GSAP. With this knowledge, you should
 already have enough to start creating your own animations.
